@@ -4,9 +4,6 @@
 *.ap_
 *.aab
 
-# Pdf files
-*.pdf
-
 # Files for the ART/Dalvik VM
 *.dex
 
