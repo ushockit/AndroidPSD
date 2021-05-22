@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Мое приложение</string>
+    <string name="create_person">Создать запись</string>
+</resources>
