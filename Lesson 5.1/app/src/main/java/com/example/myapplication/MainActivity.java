@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.myapplication.api.services.datanews.DataNewsService;
 import com.example.myapplication.api.services.datanews.models.DataNewResponse;
@@ -19,6 +20,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
     ImageView imageView;
+    Button btn;
+    TextView tv1, tv2, tv3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,10 +51,6 @@ public class MainActivity extends AppCompatActivity {
             public void onFailure(Call<DataNewResponse> call, Throwable t) {
                 int a = 0;
             }
-        });
-
-        imageView.setOnClickListener(v -> {
-
         });
 
     }
