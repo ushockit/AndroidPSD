@@ -19,6 +19,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
+    // Controls
     ImageView imageView;
     Button btn;
     TextView tv1, tv2, tv3;
