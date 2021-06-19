@@ -3,6 +3,8 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.myapplication.api.services.datanews.DataNewsService;
 import com.example.myapplication.api.services.datanews.models.DataNewResponse;
@@ -16,12 +18,14 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        imageView = findViewById(R.id.imageView);
 
         Gson gson = new GsonBuilder()
                 .setLenient()
@@ -44,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
             public void onFailure(Call<DataNewResponse> call, Throwable t) {
                 int a = 0;
             }
+        });
+
+        imageView.setOnClickListener(v -> {
+
         });
 
     }
